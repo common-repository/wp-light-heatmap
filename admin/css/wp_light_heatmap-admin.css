@@ -1,0 +1,165 @@
+/* *
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+/*
+ * Hide OS, Browser, WordPress default checkboxes
+ */
+
+ input[type=checkbox],
+ input[type=radio] {
+	 visibility: hidden!important;
+	 margin: 0!important;
+	 width: 0!important;
+ }
+
+ .text#interval-form {
+	 width: 152px;
+	 margin-top: 18px;
+	 text-align: center;
+	 border: none;
+	 border: 2px solid #999999;
+	 border-radius: 24px;
+ }
+
+ .header-plugin-settings {
+	 margin: 10px 40px!important;
+	 color: white!important;
+ }
+
+ .toplevel_page_wp_light_heatmap_page {
+	 background: #005C97;
+	 /* fallback for old browsers */
+	 background: -webkit-linear-gradient(to right, #363795, #005C97);
+	 /* Chrome 10-25, Safari 5.1-6 */
+	 background: linear-gradient(to right, #363795, #005C97);
+	 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+ .secondary-settings-button-block {
+	 padding-left: 10px
+ }
+
+ .secondary-settings-button-override {
+	 padding: 5px 5px 5px 5px!important;
+	 margin-bottom: 0px!important;
+	 margin-top: 5px!important;
+ }
+
+ .primary-settings-button-block {
+	 padding-left: 10px;
+	 margin-bottom: 0px;
+	 margin-top: 20px;
+ }
+
+ .primary-settings-button-override {
+	 padding: 5px 5px 5px 5px!important;
+	 margin-bottom: 0px!important;
+ }
+
+ .clear-block {
+	 clear: both;
+ }
+
+ .interval-block {
+	 margin: 5px;
+	 padding: 10px;
+ }
+
+ .onoff-block {
+	 border-right: 1px solid #DFDFDF;
+	 margin: 5px;
+	 padding: 10px;
+ }
+
+ .postbox-description {
+	 padding: 10px;
+ }
+
+ .postbox-title {
+	 font-size: 1.3em;
+ }
+
+ .hndle {
+	 padding: 10px 0 10px 20px;
+ }
+
+ .postbox {
+	 clear: both;
+	 margin: 10px 40px;
+ }
+
+ .postbox#clear-database-block, .postbox#basic-settings-block {
+	 border-radius: 10px;
+	 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ }
+
+ .label-suboption {
+	 display: block;
+	 text-align: center;
+	 line-height: 50%;
+	 font-size: 1.1em;
+ }
+
+ .onoffswitch {
+	 position: relative;
+	 width: 76px;
+	 -webkit-user-select: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+ }
+
+ .onoffswitch-checkbox {
+	 display: none;
+ }
+
+ .onoffswitch-label {
+	 display: block;
+	 overflow: hidden;
+	 cursor: pointer;
+	 border: 2px solid #999999;
+	 border-radius: 24px;
+ }
+
+ .onoffswitch-inner {
+	 display: block;
+	 width: 200%;
+	 margin-left: -100%;
+	 transition: margin 0.3s ease-in 0s;
+ }
+
+ .onoffswitch-inner:before,
+ .onoffswitch-inner:after {
+	 display: block;
+	 float: left;
+	 width: 50%;
+	 height: 26px;
+	 padding: 0;
+	 line-height: 26px;
+	 font-size: 12px;
+	 color: white;
+	 font-family: Trebuchet, Arial, sans-serif;
+	 font-weight: bold;
+	 box-sizing: border-box;
+ }
+
+ .onoffswitch-inner:before {
+	 content: "ENABLED";
+	 padding-left: 10px;
+	 /* background-color: #007CBA; color: #FFFFFF; */
+	 background-image: linear-gradient(to right, #3a7bd5 51%, #00d2ff 100%);
+ }
+
+ .onoffswitch-inner:after {
+	 content: "DISABLED";
+	 padding-right: 10px;
+	 background-color: #EEEEEE;
+	 color: #999999;
+	 text-align: right;
+ }
+
+ .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+	 margin-left: 0;
+ }

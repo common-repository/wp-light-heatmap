@@ -1,0 +1,141 @@
+/**
+* All of the CSS for your public-facing functionality should be
+* included in this file.
+*/
+
+.heatmap-overlay {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 9999;
+	-moz-opacity: 0.30;
+	opacity: .30;
+	filter: alpha(opacity=30);
+	overflow: visible;
+}
+
+.dot {
+	background-color: #32a0f5;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+
+/* Heatmap Color */
+
+.dot#dark-green {
+	z-index: 10000;
+	background-color: #283479;
+	-moz-box-shadow: 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 3px #283479, 0px 0px 7px #283479, 0px 0px 5px #283479, 0px 0px 3px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479;
+	-webkit-box-shadow: 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 3px #283479, 0px 0px 7px #283479, 0px 0px 5px #283479, 0px 0px 3px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479;
+	box-shadow: 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 3px #283479, 0px 0px 7px #283479, 0px 0px 5px #283479, 0px 0px 3px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479, 0px 0px 20px #283479;
+}
+
+.dot#green {
+	z-index: 10001;
+	background-color: #28377f;
+	-moz-box-shadow: 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 3px #28377f, 0px 0px 7px #28377f, 0px 0px 5px #28377f, 0px 0px 3px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f;
+	-webkit-box-shadow: 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 3px #28377f, 0px 0px 7px #28377f, 0px 0px 5px #28377f, 0px 0px 3px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f;
+	box-shadow: 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 3px #28377f, 0px 0px 7px #28377f, 0px 0px 5px #28377f, 0px 0px 3px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f, 0px 0px 20px #28377f;
+}
+
+.dot#light-green {
+	z-index: 10002;
+	background-color: #415fac;
+	-moz-box-shadow: 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 3px #415fac, 0px 0px 7px #415fac, 0px 0px 5px #415fac, 0px 0px 3px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac;
+	-webkit-box-shadow: 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 3px #415fac, 0px 0px 7px #415fac, 0px 0px 5px #415fac, 0px 0px 3px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac;
+	box-shadow: 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 3px #415fac, 0px 0px 7px #415fac, 0px 0px 5px #415fac, 0px 0px 3px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac, 0px 0px 20px #415fac;
+}
+
+.dot#light-yellow {
+	z-index: 10003;
+	background-color: #199292;
+	-moz-box-shadow: 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 3px #199292, 0px 0px 7px #199292, 0px 0px 5px #199292, 0px 0px 3px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292;
+	-webkit-box-shadow: 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 3px #199292, 0px 0px 7px #199292, 0px 0px 5px #199292, 0px 0px 3px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292;
+	box-shadow: 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 3px #199292, 0px 0px 7px #199292, 0px 0px 5px #199292, 0px 0px 3px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292, 0px 0px 20px #199292;
+}
+
+.dot#yellow {
+	z-index: 10004;
+	background-color: #57b94a;
+	-moz-box-shadow: 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 3px #57b94a, 0px 0px 7px #57b94a, 0px 0px 5px #57b94a, 0px 0px 3px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a;
+	-webkit-box-shadow: 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 3px #57b94a, 0px 0px 7px #57b94a, 0px 0px 5px #57b94a, 0px 0px 3px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a;
+	box-shadow: 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 3px #57b94a, 0px 0px 7px #57b94a, 0px 0px 5px #57b94a, 0px 0px 3px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a, 0px 0px 20px #57b94a;
+}
+
+.dot#light-orange {
+	z-index: 10005;
+	background-color: #b2d33b;
+	-moz-box-shadow: 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 3px #b2d33b, 0px 0px 7px #b2d33b, 0px 0px 5px #b2d33b, 0px 0px 3px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b;
+	-webkit-box-shadow: 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 3px #b2d33b, 0px 0px 7px #b2d33b, 0px 0px 5px #b2d33b, 0px 0px 3px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b;
+	box-shadow: 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 3px #b2d33b, 0px 0px 7px #b2d33b, 0px 0px 5px #b2d33b, 0px 0px 3px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b, 0px 0px 20px #b2d33b;
+}
+
+.dot#orange {
+	z-index: 10006;
+	background-color: #faed35;
+	-moz-box-shadow: 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 3px #faed35, 0px 0px 7px #faed35, 0px 0px 5px #faed35, 0px 0px 3px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35;
+	-webkit-box-shadow: 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 3px #faed35, 0px 0px 7px #faed35, 0px 0px 5px #faed35, 0px 0px 3px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35;
+	box-shadow: 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 3px #faed35, 0px 0px 7px #faed35, 0px 0px 5px #faed35, 0px 0px 3px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35, 0px 0px 20px #faed35;
+}
+
+.dot#dark-orange {
+	z-index: 10007;
+	background-color: #f47b20;
+	-moz-box-shadow: 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 3px #f47b20, 0px 0px 7px #f47b20, 0px 0px 5px #f47b20, 0px 0px 3px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20;
+	-webkit-box-shadow: 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 3px #f47b20, 0px 0px 7px #f47b20, 0px 0px 5px #f47b20, 0px 0px 3px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20;
+	box-shadow: 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 3px #f47b20, 0px 0px 7px #f47b20, 0px 0px 5px #f47b20, 0px 0px 3px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20, 0px 0px 20px #f47b20;
+}
+
+.dot#red {
+	z-index: 10008;
+	background-color: #ee2424;
+	-moz-box-shadow: 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 3px #ee2424, 0px 0px 7px #ee2424, 0px 0px 5px #ee2424, 0px 0px 3px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424;
+	-webkit-box-shadow: 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 3px #ee2424, 0px 0px 7px #ee2424, 0px 0px 5px #ee2424, 0px 0px 3px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424;
+	box-shadow: 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 3px #ee2424, 0px 0px 7px #ee2424, 0px 0px 5px #ee2424, 0px 0px 3px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424, 0px 0px 20px #ee2424;
+}
+
+.spinner#spinner {
+	display: none;
+	float: right;
+	margin-top: 3px;
+}
+
+.heatmap-bar-span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.heatmap-bar-off,
+.heatmap-bar-on {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	height: 30px;
+	text-align: center;
+	opacity: .3;
+	padding: 3px 10px 30px 10px;
+	font-size: 16px!important;
+	border-radius: 30px;
+	-moz-border-radius: 100px 100px 100px 100px;
+	-webkit-border-radius: 100px 100px 100px 100px;
+	cursor: pointer;
+	width: 170px;
+	background-color: white;
+	color: black;
+	z-index: 10500;
+}
+
+.heatmap-bar-off {
+	border: 1px solid black;
+}
+
+.heatmap-bar-on {
+	border: 1px solid black;
+}
